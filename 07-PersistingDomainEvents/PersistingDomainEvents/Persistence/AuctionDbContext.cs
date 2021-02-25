@@ -29,7 +29,7 @@ namespace PersistingDomainEvents.Persistence
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=EFCore-DDD;Integrated Security=true");
+            optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=EFCore-DDD_07_PersistingDomainEvents;Integrated Security=true");
             base.OnConfiguring(optionsBuilder);
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)

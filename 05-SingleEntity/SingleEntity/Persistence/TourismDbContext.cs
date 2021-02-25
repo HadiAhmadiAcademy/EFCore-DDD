@@ -9,7 +9,7 @@ namespace SingleEntity.Persistence
         public DbSet<Passenger> Passengers { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=EFCore-DDD;Integrated Security=true");
+            optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=EFCore-DDD_05_SingleEntity;Integrated Security=true");
             base.OnConfiguring(optionsBuilder);
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)

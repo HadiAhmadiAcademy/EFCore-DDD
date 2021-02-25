@@ -9,7 +9,7 @@ namespace Encapsulation.Persistence
         public DbSet<Customer> Customers { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=EFCore-DDD;Integrated Security=true");
+            optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=EFCore-DDD_01_Encapsulation;Integrated Security=true");
             base.OnConfiguring(optionsBuilder);
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
